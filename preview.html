@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My eBook Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My eBook Reader</h1>
+  
+  <input type="file" id="fileInput" accept=".pdf,.epub">
+  
+  <div id="readerContainer">
+    <canvas id="pdfCanvas" style="display:none;"></canvas>
+    <div id="epubContainer" style="display:none;"></div>
+  </div>
+  
+  <div id="controls" style="display:none;">
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
+    <span id="pageInfo"></span>
+  </div>
+
+  <script src="pdf.js"></script>
+  <script src="epub.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
